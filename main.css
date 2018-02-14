@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    animation: colorchange 50s;
+
+    -webkit-animation: colorchange 50s;
+}
+
+@keyframes colorchange
+{
+    0%  {background: rgba(229, 91, 195, 1);}
+    25% {background: rgba(232, 22, 110, 1);}
+    50% {background: rgba(232, 22, 40, 1);}
+    75% {background: rgba(232, 22, 40, 0.5);}
+    100%{background: rgba(232, 22, 103, 1);}
+}
+
+@-webkit-keyframes colorchange
+{
+    0%  {background: rgba(229, 91, 195, 1);}
+    25% {background: rgba(232, 22, 110, 1);}
+    50% {background: rgba(232, 22, 40, 1);}
+    75% {background: rgba(232, 22, 40, 0.5);}
+    100%{background: rgba(232, 22, 103, 1);}
+}
+
+.heartbutton{
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    Text-align: center;
+}
+
+.heart{
+    width: 100%;
+    animation: beat .5s infinite alternate;
+	transform-origin: center;
+}
+
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
